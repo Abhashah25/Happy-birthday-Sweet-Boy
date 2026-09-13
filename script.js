@@ -42,10 +42,10 @@ document.querySelectorAll(".next").forEach(btn=>{
 });
 
 const photos=[
-  ["photos/prem1.jpg","This smile 🥹"],
-  ["photos/prem2.jpg","Just you being you. ✨"],
-  ["photos/prem3.jpg","Looking good, birthday boy! 😌"],
-  ["photos/prem4.jpg","And one more favourite… ❤️"]
+  ["prem1.jpg","This smile 🥹"],
+["prem2.jpg","Just you being you. ✨"],
+["prem3.jpg","Looking good, birthday boy! 😌"],
+["prem4.jpg","And one more favourite… ❤️"]
 ];
 let photoIndex=0;
 const img=document.getElementById("memoryImg");
