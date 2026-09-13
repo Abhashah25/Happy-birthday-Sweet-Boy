@@ -20,9 +20,18 @@ function makeHeart(){
 }
 setInterval(makeHeart, 700);
 
-document.getElementById("openBtn").onclick = () => {
+document.getElementById("openBtn").onclick = async () => {
   show("reveal");
-  try { music.volume=.35; music.play(); musicBtn.textContent="♫"; } catch(e){}
+
+  music.volume = 0.35;
+
+  try {
+    await music.play();
+    musicBtn.textContent = "♫";
+  } catch (error) {
+    console.log("Music could not start:", error);
+    musicBtn.textContent = "🔇";
+  }
 };
 
 musicBtn.onclick = () => {
