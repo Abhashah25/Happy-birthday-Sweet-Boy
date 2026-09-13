@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120b22">
+  <title>Happy Birthday Prem ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="hearts"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+  <audio id="music" loop preload="auto">
+    <!-- Add your own MP3 as music.mp3 in this folder if you want music. -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="screen active" id="opening">
+      <div class="orb"></div>
+      <p class="tiny">A little surprise for you...</p>
+      <h1>Hey <span>Prem</span> 🫶🏻</h1>
+      <p class="sub">I made something special just for you.</p>
+      <button class="primary" id="openBtn">Open Your Surprise 🎁</button>
+      <p class="hint">tap the button ✨</p>
+    </section>
+
+    <section class="screen" id="reveal">
+      <p class="tiny">Ready?</p>
+      <div class="name-reveal" id="nameReveal"></div>
+      <h2>HAPPY BIRTHDAY</h2>
+      <div class="birthday-name">PREM <span>❤️</span></div>
+      <button class="primary next" data-next="memories">Continue →</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="tiny">A few favourite moments</p>
+      <h2 class="section-title">Just you being you. 📸</h2>
+      <div class="photo-card">
+        <img id="memoryImg" src="photos/prem1.jpg" alt="Prem">
+        <div class="photo-caption" id="caption">This smile 🥹</div>
+      </div>
+      <div class="dots" id="dots"></div>
+      <button class="primary" id="photoNext">Next memory ✨</button>
+    </section>
+
+    <section class="screen" id="letter">
+      <p class="tiny">A little message...</p>
+      <div class="envelope" id="envelope">
+        <div class="env-flap"></div>
+        <div class="env-body">💌</div>
+      </div>
+      <button class="primary" id="openLetter">Open my message 💌</button>
+
+      <div class="letter-box" id="letterBox">
+        <div class="paper">
+          <div class="paper-title">For my sweet boy,</div>
+          <p id="wish1"></p>
+          <p id="wish2"></p>
+          <p id="wish3"></p>
+          <div class="signature">— With lots of love ❤️</div>
+        </div>
+      </div>
+      <button class="primary next hidden" id="letterNext">One last surprise →</button>
+    </section>
+
+    <section class="screen final-screen" id="final">
+      <div class="final-glow"></div>
+      <p class="tiny">Make a wish, birthday boy ✨</p>
+
+      <div class="cake-wrap">
+        <div class="cake">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="icing"></div>
+          <div class="cake-top"></div>
+          <div class="cake-body"></div>
+          <div class="plate"></div>
+        </div>
+      </div>
+
+      <h2>Happy Birthday, Prem! 🎂</h2>
+      <p class="final-message">May your smile always stay this bright. ❤️</p>
+      <button class="wish-btn" id="wishBtn">Make a Wish ✨</button>
+      <p class="hidden wish-complete" id="wishComplete">Wish sent to the universe... 🌙💫</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
