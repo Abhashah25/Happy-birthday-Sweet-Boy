@@ -42,7 +42,7 @@ document.querySelectorAll(".next").forEach(btn=>{
 });
 
 const photos=[
-  ["prem1.jpg","This smile 🥹"],
+["prem1.jpg","This smile 🥹"],
 ["prem2.jpg","Just you being you. ✨"],
 ["prem3.jpg","Looking good, birthday boy! 😌"],
 ["prem4.jpg","And one more favourite… ❤️"]
